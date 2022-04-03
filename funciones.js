@@ -32,7 +32,10 @@ function resta(a, b) {
 }
 
 //Undefined
+// Si no se retorna ningun valor este sera Undefined
 
+//Asignar valro retornado por una funcion en una variable
+//Se puede asignar un valor retornado de una función a una variable
 
 
 
