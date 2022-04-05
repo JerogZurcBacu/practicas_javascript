@@ -44,4 +44,20 @@ console.log(1 <= 1); //true
 console.log("mundo" <= "hola"); //false
 console.log("ABC" <= "ACB"); //false
 
-//Operador logico 'and'
+//Operador logico 'and' && - solo si ambos elementos son verdaderos el resultado será verdadero
+
+console.log(true && true); //true
+console.log(true && false); //false
+
+ //Operador lógico 'or' || - basta con que uno de los elementos sean verdaderos para que el resultado sea verdadero
+ 
+ console.log(true || true); //true
+ console.log(true || false); //true
+ console.log(false || false); //false
+ 
+ //Operador lógico 'not' ! - convierte el resultado booleano en el contrario si es true lo convierte a false y viceversa
+ 
+ console.log(!true); //false
+ console.log(!false); //true
+ 
+  
