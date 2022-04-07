@@ -6,7 +6,10 @@ function nombre (argumentos) {
 
 */
 
-//Argumentos
+/*
+* Argumentos
+*/
+
 // Ámbito global (Variables) - (globales(programa) y locales(funcion))
 
 var x = 123
@@ -26,19 +29,31 @@ sumar("come", "popo");
 
 //las variables locales tienen preferencia sobre las globales cuando tienen el mismo nombre
 
-//Retorno de valor
+/*
+* Retorno de valor
+*/
+
 function resta(a, b) {
     return a - b; //retorna la resta de los valores, que puede imprimirse con consolo.log(resta(n, n)) o se puede asignar a una variable
 }
 
-//Undefined
+/*
+* Undefined
+*/
+
 // Si no se retorna ningun valor este sera Undefined
 
-//Asignar valro retornado por una funcion en una variable
+/*
+* Asignar valro retornado por una funcion en una variable
+*/
+
 //Se puede asignar un valor retornado de una función a una variable
 
+/*
+* Patrón de retorno anticipado
+*/
 
-
+//La función se detienen al momento de retornar un valor. Esta propiedad puede ser util utilizando un patron de retorno anticipado, junto con una condicional que determine en que momento (si se cumple una condicion) se debera detener la función,
 
 
 

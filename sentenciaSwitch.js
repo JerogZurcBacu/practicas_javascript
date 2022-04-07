@@ -45,4 +45,3 @@ function ejemploSwitch(valor) {
   return resultado
 }
 
-// Reemplazar "if ... else" por 'switch'
