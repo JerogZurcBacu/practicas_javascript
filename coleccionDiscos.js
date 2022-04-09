@@ -37,4 +37,13 @@ Tu meta es completar la función implementando las siguientes reglas para modifi
 
 */
 
-//55:54:32
+function actualizarDiscos (discos, id, propiedad, valor) {
+    if (valor === "") {
+        delete discos[id][propiedad];
+    } else if (propiedad === "canciones") {
+        discos[id][propiedad] = [];
+        discos[id][propiedad].push(valor);
+    }
+}
+
+// 5:58:14
