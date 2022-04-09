@@ -147,4 +147,29 @@ console.log(verificarPropiedad(curso, "maestro"));
 * Objetos complejos
 */
 
-//5:33:01
+ var miRecetario = [
+     {
+         "nombre": "Pay de limón",
+         "porciones": "4 vasos",
+         "receta" : {
+             "lechera": "250 ml",
+             "carnation": "250 ml",
+             "limón": 6,
+             "galleta": "300g",
+             "decoración": ["maria", "lechera", "granillo"]
+         }
+     },
+     {
+        "nombre": "Pay de oreo",
+        "porciones": "4 vasos",
+        "receta" : {
+            "lechera": "250 ml",
+            "carnation": "250 ml",
+            "queso crema": "500g",
+            "galleta": "300g",
+            "decoración": ["oreo", "lechera", "granillo"]
+        }
+     }
+    ];
+
+console.log(miRecetario[0].receta.decoración[2]);
