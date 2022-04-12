@@ -41,9 +41,33 @@ function actualizarDiscos (discos, id, propiedad, valor) {
     if (valor === "") {
         delete discos[id][propiedad];
     } else if (propiedad === "canciones") {
-        discos[id][propiedad] = [];
+        discos[id][propiedad] = discos[id][propiedad] || [];
         discos[id][propiedad].push(valor);
+    } else {
+        discos[id][propiedad] = valor;
     }
 }
 
-// 5:58:14
+// Ejecución 1
+
+console.log(coleccionDeDiscos[7853].tituloDelAlbum);
+
+actualizarDiscos(coleccionDeDiscos, 7853, "tituloDelAlbum", "");
+
+console.log(coleccionDeDiscos[7853].tituloDelAlbum);
+
+// Ejecución 2
+
+console.log(coleccionDeDiscos[5439].canciones);
+
+actualizarDiscos(coleccionDeDiscos, 5439, "canciones", "Mama Mia");
+
+console.log(coleccionDeDiscos[5439].canciones);
+
+// Ejecución 3
+
+console.log(coleccionDeDiscos[5439].artista);
+
+actualizarDiscos(coleccionDeDiscos, 5439, "artista", "ABBA");
+
+console.log(coleccionDeDiscos[5439].artista);
