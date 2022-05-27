@@ -6,10 +6,29 @@
         <title>Color Fliper || Jerog Zurc</title>
         <meta name="description" content="Proyecto de práctica de JS. Color Fliper es un sitio donde al precionar un botón, el background-color del html cambia, y se muestra el nombre del color (en su versión símple) o el código hexadecimal (en su versión 'Hex').">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <nav>
+            <h1>Color Fliper</h1>
+            <ul>
+                <li>
+                    <a href="index.html">Versión Simple</a>
+                </li>
+                <li>
+                    <a href="hex.html">Versión Hexadecimal</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="contenedor_princial">
+                <h2>Background Color :<span class="color">#f1f5f8</span></h2>
+                <button class="boton_principal" id="btn">¡Da click!</button>
+            </div>
+        </main>
         <script src="" async defer></script>
     </body>
 </html>
