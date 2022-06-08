@@ -1,0 +1,108 @@
+/*
+* Generales
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*
+* Navegación
+*/
+
+nav {
+    height: 50px;
+    padding: 0 10%;
+    background-color: rgb(204, 204, 204);
+    box-shadow: 0px 4px 15px -3px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+}
+nav h1 {
+    color: #023859;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+/*
+*  Main
+*/
+
+main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.contenedor_princial {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_princial h1 {
+    font-size: 60px;
+}
+.contenedor_princial span {
+    font-size: 60px;
+}
+.contenedor_botones {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_botones .btn {
+    width: 30%;
+    max-width: 120px;
+    height: 32px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 2px #000;
+    color: #000;
+}
+.contenedor_botones .btn:hover {
+    color: #fff;
+}
+.contenedor_botones .disminuir:hover {
+    background-color: red;
+}
+.contenedor_botones .resetear:hover {
+    color: #000;
+    background-color: rgb(218, 218, 23);
+}
+.contenedor_botones .incrementar:hover {
+    background-color: green;
+}
+/*
+* Media Querie
+*/
+
+@media screen and (min-width: 750px) {
+	
+}
+@media screen and (min-width: 1024px) {
+    nav {
+        height: 100px;
+    }
+    nav h1 {
+        font-size: 38px;
+    }
+}
+@media screen and (min-width: 1650px) {
+
+}
